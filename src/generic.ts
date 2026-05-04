@@ -18,7 +18,9 @@ const coordinates1 = [20, 30];
 const coordinates2 = ['20', '30'];
 
 // object
-const userList: generic<{ name: string; age: number; }> = [
+type User = { name: string; age: number; };
+
+const userList: generic<User> = [
     {
         name: 'x',
         age: 22
